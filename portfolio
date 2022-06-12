@@ -1,0 +1,437 @@
+<html>
+    <head>
+        <title>andrews design</title>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="index.css" rel="stylesheet">
+        <link rel="icon" href="images/logo.png" sizes="96x192">
+        <link rel="stylesheet" href="fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css">
+    </head>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="index.js"></script>
+   
+    <body>
+
+        <header id="contain">
+            <div class="container" id="my-container">
+                <nav>
+                     <input type="checkbox" id="check">
+                     <label for="check" class="checkbtn"> 
+                    <i class="fa fa-bars"></i>     
+                    </label>
+                    <label class="logo">Andrews Design</label>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="sign_up.html"> Sign up</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li id="shop"><button id="modal-btn"><a href="add_to_cart.html"><i class="fa fa-shopping-cart"></i> (<span class="total-count">0</span>)
+                        </button></a></li>  
+                    </ul>
+                </nav>
+            </div>
+        </header>
+       
+        <section>
+            <div class="container1">
+                <div class="col">
+                    <h1>Bring your ideas to life!</h1>
+                    <p>We are a creative organization seeking to bring out the best for your business, through brand designs and product designs,
+                    <br>build your strong visual identity with us.
+                    </p>
+                        <br> <br>
+                        <a href="sign_up.html"><button>Get Started</button></a>
+                </div>
+                
+            </div>
+        </section>
+        
+        <article>
+            <div class="container2">
+                <h2>Our Services</h2>
+                <p>We offer variety of services with the aim of growing your brand and making it marketable.</p>
+            </div>
+            <div class="portfolio">
+            <div id="carousel_wrapper">
+               <div id="car">
+                <div id="coli"> 
+                    <li id="work01">
+                        <button class="add-cart cart1" id="add" onclick="add()">add to cart</button>
+                    </li>
+                <p>Logo Designs<br>$50.00</p>
+                </div>    
+                
+                <div id="coli"> 
+                   <li id="work02">
+                    <button class="add-cart cart2" id="add" onclick="add()">add to cart</button>
+                   </li>
+                   <p>Mascot Designs<br>$50.00</p>
+                </div>
+            </div>   
+            <div id="car">
+                <div id="coli"> 
+                    <li id="work03">
+                        <button class="add-cart cart3" id="add" onclick="add()">add to cart</button>
+                    </li>
+                    <p>Book Cover<br>$50.00</p>
+                 </div>   
+
+                 <div id="coli"> 
+                    <li id="work04">
+                        <button class="add-cart cart4" id="add" onclick="add()">add to cart</button>
+                    </li>
+                    <p>Business Cards<br>$50.00</p>
+                </div>
+            </div>                        
+            </div> 
+        </div>
+        <div class="portfolio">
+            <div id="carousel_wrapper">
+               <div id="car">
+                <div id="coli"> 
+                    <li id="work05">
+                        <button class="add-cart cart5" id="add" onclick="add()">add to cart</button>
+                    </li>
+                    
+                <p>Letterhead<br>$50.00</p>
+                </div>    
+                
+                <div id="coli"> 
+                   <li id="work06">
+                    <button class="add-cart cart6" id="add" onclick="add()">add to cart</button>
+                   </li>
+                   <p>Real Estate<br>$50.00</p>
+                </div>
+            </div>   
+            <div id="car">
+                <div id="coli"> 
+                    <li id="work07">
+                        <button class="add-cart cart7" id="add" onclick="add()">add to cart</button>
+                    </li>
+                    <p>Logo Animation<br>$50.00</p>
+                 </div>   
+
+                 <div id="coli"> 
+                    <li id="work08">
+                        <button class="add-cart cart8" id="add" onclick="add()">add to cart</button>
+                    </li>
+                    <p>Website design<br>$50.00</p>
+                </div>
+            </div>                        
+            </div> 
+        </div>
+
+        <div id="item">Item added to cart</div>
+        
+      <!-- <div class="but"> -->
+        <a href="services.html"><button>View More</button></a>
+    <!-- /// -->
+        </article>
+
+        <div class="value">
+            <h2>Our Values & Features</h2>
+            <p>We believe brand interaction is key to communication. Real innovations <br>and positive customer experience are the heart of success.</p>
+            <div class="con2">
+                <img src="images/it-service1.png" class="img">
+            </div>
+            <div id="col">
+                <div class="con1">
+                <ul>
+                   <button>Modern Designs</button>
+                   <br>
+                   <button>Easy To Use</button>
+                   <br>
+                   <button>Affordable</button>
+                   <br>
+                   
+                
+                </ul>
+                </div>
+                <div class="con1">
+                    <ul>
+                        <button>Fast Delivery</button>
+                        <br>
+                        <button>Revisions</button>
+                        <br>
+                        <button>Customer Services</button>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="viewbtn" >
+                <a href="services.html"><button>VIEW ALL SERVICES</button></a>
+            </div>      
+                
+                  
+            
+        </div>
+
+        <div class="plans">
+            <h2>Pick A Package That Fit Your <br><br> Business Goals</h2>
+            <p>(These packages consist of services)</p>
+                
+            <div class="slideshow-container1">
+                
+                    <div class="mySlides1" id="goals">
+                        <h3 class="plan1">Starter</h3>
+                        <h2>$50.00</h2>                        
+                            <p>High quality logo design.</p>
+                            <p>Editable source file.</p>
+                            <p>3 Revisions.</p>
+                            <p>2 concepts to select from.</p>
+                            <br>
+                            <br>
+                            <br>
+                            <br><br><br>
+                        <button>SELECT THE PLAN</button>
+                    </div>
+
+                    <div class="mySlides1">
+                        <h3 class="plan1">Silver</h3>
+                        <h2>$70.00</h2>
+                            <p>High quality logo design.</p>
+                            <p>Editable source file.</p>
+                            <p>Unlimited Revisions.</p>
+                            <p>Full copyrights.</p>
+                            <p>Consistency priority supports.</p>
+                            <p>2-3 concepts to select from.</p>
+                            <br>
+                            <br>
+                        <button>SELECT THE PLAN</button>
+                    </div>
+
+                    
+                    <div class="mySlides1">
+                        <h3 class="plan1">Gold</h3>
+                        <h2>$100.00</h2>
+                            <p>High quality logo design.</p>
+                            <p>Editable source file.</p>
+                            <p>Business cards design.</p>
+                            <p>Unlimited Revisions.</p>
+                            <p>Full copyrights.</p>
+                            <p>Consistency priority supports.</p>
+                            <p>2-3 concepts to select from.</p>
+                        <button>SELECT THE PLAN</button>
+                    </div>
+                     <div class="mySlides1">
+                        <h3 class="plan1">Platnum</h3>
+                        <h2>$200.00</h2>
+                            <p>High quality logo design.</p>
+                            <p>Editable source file.</p>
+                            <p>Business cards design.</p>
+                            <p>Unlimited Revisions.</p>
+                            <p>Full copyrights.</p>
+                            <p>Consistency priority supports.</p>
+                            <p>2-3 concepts to select from.</p>
+                        <button>SELECT THE PLAN</button>
+                    </div>
+                    <div class="mySlides1">
+                        <h3 class="plan1">Premium</h3>
+                        <h2>$250.00</h2>
+                            <p>High quality logo design.</p>
+                            <p>Editable source file.</p>
+                            <p>Business cards design.</p>
+                            <p>Unlimited Revisions.</p>
+                            <p>Full copyrights.</p>
+                            <p>Consistency priority supports.</p>
+                            <p>2-3 concepts to select from.</p>
+                        <button>SELECT THE PLAN</button>
+                    </div>
+
+                    <a class="prev1" onclick="plusSlides1(-1)">❮</a>
+                    <a class="next1" onclick="plusSlides1(1)">❯</a>
+                
+                </div>
+                <div class="dot-container1">
+                    <span class="dot1" onclick="currentSlide1(1)"></span> 
+                    <span class="dot1" onclick="currentSlide1(2)"></span> 
+                    <span class="dot1" onclick="currentSlide1(3)"></span> 
+                    <!-- <span class="dot" onclick="currentSlide(4)"></span>  -->
+                  </div> 
+        </div>
+
+        <div class="test">
+            <p>TESTIMONIAL</p> 
+            <h2>Some Lovely Feedback <br><br>From Our Clients</h2>
+             
+            <div class="slideshow-container">
+
+                <div class="mySlides">
+                    <img src="images/abbie.JPG" alt="Avatar" >
+                    <h3 class="author">- Abbie Jerome</h3>
+                    <p class="job">Ui/Ux</p>
+                  <p>Lorem ipsum dolor sit amet. maiores ullam cumque voluptate. Voluptates illum doloremque voluptatibus 
+                      omnis aut. Corporis, provident.</p>
+                  
+                </div>
+                
+                <div class="mySlides">
+                    <img src="images/dave.jpg" alt="Avatar" >
+                    <h3 class="author">- Juicy Designs</h3>
+                    <p class="job">Graphic Designer</p>
+
+                    <p>Lorem ipsum dolor sit amet. maiores ullam cumque voluptate. Voluptates illum doloremque voluptatibus 
+                        omnis aut. Earum, culpa. Eaque consequuntur quos Corpori.</p>
+                  
+                </div>
+                
+                <div class="mySlides">
+                    <img src="images/bless.JPG" alt="Avatar" >
+                    <h3 class="author">- Blessing Edison</h3>
+                    <p class="job">Blockchain Analyst</p>
+
+                    <p>Lorem ipsum dolor sit amet. maiores ullam cumque voluptate. Voluptates illum doloremque voluptatibus 
+                        omnis aut. Corporis, provident sapiente. Earum, culpa.</p>
+                  
+                </div>
+
+                                
+                <div class="mySlides">
+                    <img src="images/jane.jpg" alt="Avatar" >
+                    <h3 class="author">- Jane Madison</h3>
+                    <p class="job">Photographer</p>
+
+                    <p class="jo">Lorem ipsum dolor sit amet. maiores ullam cumque voluptate. Voluptates illum doloremque voluptatibus 
+                         eum, doloribus, quo rem odio sapiente. Earum, culpa. Eaque consequuntur quos excepturi..</p>
+                  
+                </div>
+
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                
+                <div class="dot-container">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                  
+                </div>
+                
+
+                </div>
+                
+              
+                        </div>
+                        <!-- /side thumbnail -->
+    
+                    </div><!-- /End col -->
+                </div><!-- /End row -->
+            </div><!-- /End container -->
+        </div><!-- /End customer-feedback -->
+    </section>
+    
+    
+    <!-- extra -->    
+            </div>
+
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex -1].style.display = "block";  
+                  dots[slideIndex +1].className += " active";
+                }
+
+             // When the user scrolls down 20px from the top of the document, show the button
+                  window.onscroll = function() {scrollFunction()};
+
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.getElementById("myBtns").style.display = "block";
+                    } else {
+                        document.getElementById("myBtns").style.display = "none";
+                    }
+                }
+
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+
+
+                
+            </script>  
+
+            <div class="details">
+                <div class="contact">
+                    <div class="group">
+                        <h2>Contact Info </h2>
+                        <p id="con3">Email Address</p>
+                        <p>saviour.andrew889@gmail.com</p>
+                        <p id="con3">Phone</p>
+                        <p>+234 904 9152 073</p>
+                    </div>
+
+                    <div class="group">
+                        <h2>Quick Links </h2>
+                        <div id="con4">
+                        <p><a href=index.html>Home</a></p>
+                        <p><a href="services.html">Services</a></p>
+                        </div>
+                        <div id="con4">
+                        <p><a href=sign_up.html>Sign Up</a></p>
+                        <p><a href="about.html">About Us</a></p>
+                        </div>
+                        <div id="con4">
+                        <p><a href=login.html>Login</a></p>
+                        <p><a href="contact.html">Contact Us</a></p>
+                        </div>
+                    </div>
+
+                    <div class="group" id="groupie">
+                        <h2>Reach Us </h2>
+                        <p id="con3">Do you have any Questions</p>
+                        <p><a href="contact.html">Get Answers</a></p>
+                        <p id="con3">Social Networks</p>
+                        <div id="con4">
+                        <p><a href="about.html">Facebook</a></p>
+                        <p><a href=login.html>Instagram</a></p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="copyrights">
+                    <p>copyright@2022 AndrewsDesign.</p>
+                    <ul>
+                        <li><p><a href="#">Privacy policy</a></p></li>
+                        <li><p>|</p></li>
+                        <li><p><a href="#">Terms & Condition</a></p></li>
+                    </ul>
+
+                </div>
+            </div>
+                    
+                    <button onclick="topFunction()" id="myBtns" title="Go to top">
+                        <!-- <img src="images/blue-arrow-up.png"> -->
+                        <i class="fa fa-arrow-up"></i>
+                    </button>
+
+                    <script src="cart.js"></script>
+        
+    </body>
+</html>
