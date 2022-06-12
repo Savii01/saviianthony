@@ -1,0 +1,1067 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+}
+
+/* header begining */
+
+header {
+    background-color:#fff;
+    margin: 0;
+    padding: 20px;    
+    justify-content:space-between;
+    width: 100%;
+    position: fixed; 
+    height: 50px;
+    z-index: 1;
+    box-shadow:10px 5px 10px rgba(0, 0, 0, 0.178);
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px;
+    color: #001;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    margin: 0 0 0 30px;
+}
+
+header nav {
+    margin-bottom: 50px;
+    height: 20px; 
+} 
+
+header ul {
+    float: right;
+    margin: 0 40px 0 20px;
+    padding: 0 20px 20px 0;
+    
+}
+
+.container li {
+    float: left;
+    display: block;
+    padding: 20px 15px 50px 15px;
+ }
+
+
+ .container a {
+    color: #001;
+    text-decoration: none; 
+    text-transform: uppercase;
+    padding: 10px 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.container a.active, .container a:hover{
+    color: #888;
+    transition: .5s;
+    border-radius: 10px;
+    padding: 20px 10px;
+ } 
+
+ 
+#check, #check + label {
+    display: none;
+    font-size: 30px;
+    float: right;
+    color: #001;
+    margin-right:50px ;
+}
+
+
+.about{
+margin: 0;
+padding:150px 100px 0 80px;
+display: flex;
+height: 900px;
+}
+
+.img1{
+    width: 600px; 
+    height: 400px; 
+    margin: 300px 20px 0 10px;
+}
+
+.about h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #001;
+    line-height: 50px;
+    border-bottom: 1px solid #001;
+}
+
+
+.about p{
+    font-size: 15px;
+    font-weight:200;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.727);
+}
+
+.choose{
+    margin: 0;
+    padding:0px 100px 0 80px;
+    display: flex;
+    height: 1100px;
+    background-color: lightgray;
+}
+
+.col2{
+    float:right;
+}
+
+.img2{
+    width: 600px; 
+    height: 400px; 
+    margin: 300px 10px 0 20px;
+}
+.img2:hover{
+    transform: scale(1.1);
+}
+
+
+.choose h4{
+    font-size:20px;
+    font-weight: 600;
+    color: #001;
+    /* line-height: 50px; */
+}
+
+.choose h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: #001;
+    line-height: 50px;
+}
+
+.choose p{
+    font-size: 15px;
+    font-weight:200;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.727);
+}
+
+
+.trusted{
+    text-align: center;
+}
+.trusted h4{
+    font-size: 15px;
+    font-weight: 600;
+    color:#001;
+    text-transform: uppercase;
+}
+
+.trusted h3{
+  font-size: 30px;
+  font-weight: 550;
+  color: #001;   
+}
+.trusted .brands{
+    margin: 0;
+    padding:0;
+} 
+.trusted .brands{
+    display: flex;
+    margin: 50px;
+}
+
+.trusted .brands .brand{
+    display: flex;
+}
+.trusted .brands .partner img{
+    width: 200px;
+    height:200px;
+    box-shadow: 1px 1px 50px rgba(0, 0, 17, 0.289);
+    margin: 23px;
+}
+.trusted .brands .partner img:hover{
+    transform: scale(1.2);
+}
+
+.details{
+    background-color:#001;
+    height: 360px;
+    padding: 20px 30px;
+}
+.contact {
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.656);
+    line-height: 20px;
+    color:#fff;
+    display: flex;
+    margin: 20px 20px;
+}
+
+.group {
+    margin: 0px 100px 20px 100px;
+   
+}
+
+.group h2{
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.656);
+    line-height: 20px;
+}
+
+#con3 {
+    color:darkgray;
+    font-weight: 200;
+}
+
+.group a {
+    color:#fff;
+    text-decoration: none;
+    display: flex;
+}
+
+#con4{
+    display: flex;
+}
+
+#con4 a{
+    margin: 0 20px 0 0;
+    
+}
+
+.group a:hover{
+    color:#888;
+}
+
+.copyrights{
+    color:white;
+    margin: 20px 120px;
+    display: flex;
+   
+  
+}
+
+.copyrights ul{
+    float: right;
+    margin: 0 40px 0 400px;
+}
+
+.copyrights li{
+    float: left;
+    display: block;
+    padding: 0px 15px 50px 15px;
+}
+
+.copyrights li p a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyrights li p a:hover{
+    color:#888;
+}
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    width: 60px;
+    height: 60px;
+    color:#001;
+    font-size: 18px;
+    box-shadow: 1px 1px 50px rgba(0, 0, 17, 0.289);
+  }
+
+  
+  #myBtn:hover {
+    background-color: #555;
+    color: #fff;
+  }
+
+  @media screen and (max-width: 768px){
+    body{
+        font-size: 7.5px;
+    }
+
+    /* HEADER BEGINING */
+
+    header{
+        padding: 30px; 
+    }
+
+    .logo{
+        font-size: 25px;
+    }
+
+    header nav header ul .container li .container a{
+        font-size: 16px;
+    }
+
+   
+#check, #check + label {
+    display: block;
+}
+
+
+header ul{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background:#fff;
+        top: 87px;
+        right: -100%;
+        text-align: center;
+        transition: .2s;
+        z-index: 1;
+    }
+    .container li{
+        padding: 50px 0 50px 0;
+        float: none;
+    }
+
+    .container  a{
+        font-size: 25px;
+        color: #001; 
+        font-weight: 600;
+    }
+
+
+
+
+    header nav header ul .container li .container  a{
+        display: block;
+        float: none;
+        font-size: 20px;
+        color: #001;
+    } 
+    
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    /* HEADER END */
+
+    
+    /* ABOUT BEGINING */
+    .about{
+        margin: 0;
+        padding:100px 50px 0 50px;
+        display: block;
+        height: 900px;
+        text-align: center;
+        }
+
+        .img1{
+            width: 300px; 
+            height: 200px; 
+            margin: 50px 20px 0 10px;
+        }
+        
+        .about h3{
+            font-size: 15px;
+            font-weight: 600;
+            color: #001;
+            line-height: 50px;
+            border-bottom: 1px solid #001;
+        }
+        
+        
+        .about p{
+            font-size: 11px;
+            font-weight:200;
+            line-height: 30px;
+            color: rgba(0, 0, 0, 0.727);
+        }
+     /* ABOUT END    */
+
+     /* WHY CHOOSE START */
+     .choose{
+        margin: 0;
+        padding:0px 50px 0 50px;
+        display: block;
+        height: 1110px;
+        background-color: rgba(211, 211, 211, 0.574);
+        text-align: center;
+    }
+    
+    .col2{
+        float:none;
+    }
+    
+    .img2{
+        width: 300px; 
+        height: 200px; 
+        margin: 90px 10px 0 20px;
+    }
+    
+    
+    .choose h4{
+        font-size:15px;
+        font-weight: 600;
+        color: #001;
+        /* line-height: 50px; */
+    }
+    
+    .choose h2{
+        padding:0px 50px 0 50px;
+        font-size: 30px;
+        font-weight: 600;
+        color: #001;
+        line-height: 30px;
+    }
+    
+    .choose p{
+        font-size: 12px;
+        font-weight:200;
+        line-height: 30px;
+        color: rgba(0, 0, 0, 0.727);
+    }
+    
+    /* WHY CHOOSE US END */
+
+    /* TRUSTED */
+    .trusted{
+        text-align: center;
+    }
+    .trusted h4{
+        font-size: 15px;
+        font-weight: 600;
+        color:#001;
+        text-transform: uppercase;
+    }
+    
+    .trusted h3{
+      font-size: 30px;
+      font-weight: 550;
+      color: #001;   
+    }
+    .trusted .brands{
+        margin: 0;
+        padding:0;
+    } 
+    .trusted .brands{
+        display: block;
+        margin: 30px;
+    }
+
+    .trusted .brands .brand{
+        display: block;
+    }
+    .trusted .brands .partner img{
+        width: 200px;
+        height:200px;
+        box-shadow: 1px 1px 50px rgba(0, 0, 17, 0.289);
+        margin: 23px;
+    }
+    .trusted .brands .partner img:hover{
+        transform: scale(1.2);
+    }
+
+    /* TRUSTED END */
+
+    .details{
+        background-color:#001;
+        height: 700px;
+        padding: 20px 0px;
+    }
+    
+    .contact {
+        color:#fff;
+        display:block;
+        margin: 10px 10px;
+    
+    }
+    
+    .group {
+        margin: 0px 50px 20px 70px;
+    }
+    
+    #con3 {
+        color:darkgray;
+        font-weight: 200;
+    }
+    
+    .group a {
+        color:#fff;
+        text-decoration: none;
+        display: flex;
+    }
+    
+    #con4{
+        display: flex;
+    }
+    
+    #con4 a{
+        margin: 0 20px 0 0;
+        
+    }
+    
+    .group a:hover{
+        color:#888;
+    }
+    
+    .copyrights{
+        color:white;
+        margin: 20px 80px;
+        display: flex;
+       
+      
+    }
+    
+    .copyrights ul{
+        float: right;
+        margin: 0 5px 0 250px;
+    }
+    
+    .copyrights li{
+        float: left;
+        display: block;
+        padding: 0px 5px 10px 5px;
+    }
+    
+    .copyrights li p a{
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .copyrights li p a:hover{
+        color:#888;
+    }
+
+  }
+  @media screen and (max-width: 414px){
+    body{
+        font-size: 7.5px;
+    }
+
+    /* HEADER BEGINING */
+
+    header{
+        padding: 34px; 
+        height: 20px;
+    }
+
+    .logo{
+        font-size: 20px;
+        margin: 0 0 0 5px;
+    }
+
+    header nav header ul .container li .container a{
+        font-size: 14px;
+    }
+
+#check, #check + label {
+    display: block;
+    font-size: 25px;
+    float: right;
+    color: #001;
+    margin-right:40px;
+} 
+
+
+header ul{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background:rgb(255, 255, 255);
+        top: 87px;
+        right: -100%;
+        text-align: center;
+        transition: .2s;
+        z-index: 1;
+    }
+    .container li{
+        padding: 30px 0 30px 0;
+        float: none;
+    }
+
+    .container  a{
+        font-size: 20px;
+        color: #001; 
+        font-weight: 600;
+    }
+
+
+
+    header nav header ul .container li .container  a{
+        display: block;
+        float: none;
+        font-size: 20px;
+        color: #001;
+    } 
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    /* HEADER END */
+
+    
+    /* ABOUT BEGINING */
+    .about{
+        margin: 0;
+        padding:100px 50px 0 50px;
+        display: block;
+        height: 1300px;
+        text-align: center;
+        }
+
+        .img1{
+            width: 300px; 
+            height: 200px; 
+            margin: 50px 20px 0 10px;
+        }
+        
+        .about h3{
+            font-size: 15px;
+            font-weight: 600;
+            color: #001;
+            line-height: 50px;
+            border-bottom: 1px solid #001;
+        }
+        
+        
+        .about p{
+            font-size: 11px;
+            font-weight:200;
+            line-height: 30px;
+            color: rgba(0, 0, 0, 0.727);
+        }
+     /* ABOUT END    */
+
+     /* WHY CHOOSE START */
+     .choose{
+        margin: 0;
+        padding:0px 50px 0 50px;
+        display: block;
+        height: 1410px;
+        background-color: rgba(211, 211, 211, 0.574);
+        text-align: center;
+    }
+    
+    .col2{
+        float:none;
+    }
+    
+    .img2{
+        width: 300px; 
+        height: 200px; 
+        margin: 90px 10px 0 20px;
+    }
+    
+    
+    .choose h4{
+        font-size:12px;
+        font-weight: 600;
+        color: #001;
+        /* line-height: 50px; */
+    }
+    
+    .choose h2{
+        padding:0px 20px 0 20px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #001;
+        line-height: 30px;
+    }
+    
+    .choose p{
+        font-size: 12px;
+        font-weight:200;
+        line-height: 30px;
+        color: rgba(0, 0, 0, 0.727);
+    }
+    
+    /* WHY CHOOSE US END */
+
+    /* TRUSTED */
+    .trusted{
+        text-align: center;
+    }
+    .trusted h4{
+        font-size: 15px;
+        font-weight: 600;
+        color:#001;
+        text-transform: uppercase;
+    }
+    
+    .trusted h3{
+      font-size: 20px;
+      font-weight: 550;
+      color: #001;   
+    }
+    .trusted .brands{
+        margin: 0;
+        padding:0;
+    } 
+    .trusted .brands{
+        display: block;
+        margin: 20px 10px 20px 8px;
+    }
+
+    .trusted .brands .brand .partner{
+        display: flex;
+    }
+    .trusted .brands .partner img{
+        width: 150px;
+        height:150px;
+        box-shadow: 1px 1px 50px rgba(0, 0, 17, 0.289);
+        margin: 23px;
+    }
+    .trusted .brands .partner img:hover{
+        transform: scale(1.2);
+    }
+
+    /* TRUSTED END */
+
+
+    .details{
+        background-color:#001;
+        height: 700px;
+        padding: 20px 0px;
+    }
+    
+    .contact {
+        color:#fff;
+        display:block;
+        margin: 10px 10px;
+    
+    }
+    
+    .group {
+        margin: 0px 10px 20px 10px;
+       
+    }
+    
+    #con3 {
+        color:darkgray;
+        font-weight: 200;
+        font-size: 10px;
+    }
+    
+    .group h2 {
+        font-size: 12px;
+    }
+    
+    .group a {
+        color:#fff;
+        text-decoration: none;
+        display: flex;
+        font-size: 10px;
+    }
+    
+    #con4{
+        display: flex;
+    }
+    
+    #con4 a{
+        margin: 0 20px 0 0;
+        
+    }
+    
+    .group a:hover{
+        color:#888;
+    }
+    
+    .copyrights{
+        color:white;
+        margin: 20px 22px;
+        display: flex;
+       
+      
+    }
+    
+    .copyrights ul{
+        float: right;
+        margin: 0 5px 0 9px;
+    }
+    
+    .copyrights li{
+        float: left;
+        display: block;
+        padding: 0px 5px 10px 5px;
+    }
+    
+    .copyrights li p a{
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .copyrights li p a:hover{
+        color:#888;
+    }
+
+  }
+
+  @media screen and (max-width: 390px){
+    body{
+        font-size: 7.5px;
+    }
+
+    /* HEADER BEGINING */ 
+    header{
+        padding: 24px; 
+        height: 20px;
+    }
+
+    .logo{
+        font-size: 17px;
+        margin: 0 0 0 3px;
+    }
+
+    header nav header ul .container li .container a{
+        font-size: 14px;
+    }
+
+#check, #check + label {
+    display: block;
+    font-size: 25px;
+    float: right;
+    color: #001;
+    margin-right:35px;
+} 
+
+
+header ul{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background:rgb(255, 255, 255);
+        top: 68px;
+        right: -100%;
+        text-align: center;
+        transition: .2s;
+        z-index: 1;
+    }
+    .container li{
+        padding: 30px 0 30px 0;
+        float: none;
+    }
+
+    .container  a{
+        font-size: 18px;
+        color: #001; 
+        font-weight: 600;
+    }
+
+
+
+    header nav header ul .container li .container  a{
+        display: block;
+        float: none;
+        font-size: 20px;
+        color: #001;
+    } 
+    
+   
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+
+
+    /* HEADER END */
+
+    
+    /* ABOUT BEGINING */
+    .about{
+        margin: 0;
+        padding:100px 50px 0 50px;
+        display: block;
+        height: 1300px;
+        text-align: center;
+        }
+
+        .img1{
+            width: 300px; 
+            height: 200px; 
+            margin: 50px 20px 0 10px;
+        }
+        
+        .about h3{
+            font-size: 15px;
+            font-weight: 600;
+            color: #001;
+            line-height: 50px;
+            border-bottom: 1px solid #001;
+        }
+        
+        
+        .about p{
+            font-size: 11px;
+            font-weight:200;
+            line-height: 30px;
+            color: rgba(0, 0, 0, 0.727);
+        }
+     /* ABOUT END    */
+
+     /* WHY CHOOSE START */
+     .choose{
+        margin: 0;
+        padding:0px 50px 0 50px;
+        display: block;
+        height: 1480px;
+        background-color: rgba(211, 211, 211, 0.574);
+        text-align: center;
+    }
+    
+    .col2{
+        float:none;
+    }
+    
+    .img2{
+        width: 300px; 
+        height: 200px; 
+        margin: 90px 15px 0 5px;
+    }
+    
+    
+    .choose h4{
+        font-size:12px;
+        font-weight: 600;
+        color: #001;
+        /* line-height: 50px; */
+    }
+    
+    .choose h2{
+        padding:0px 20px 0 20px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #001;
+        line-height: 30px;
+    }
+    
+    .choose p{
+        font-size: 12px;
+        font-weight:200;
+        line-height: 30px;
+        color: rgba(0, 0, 0, 0.727);
+    }
+    
+    /* WHY CHOOSE US END */
+
+    /* TRUSTED */
+    .trusted{
+        text-align: center;
+    }
+    .trusted h4{
+        font-size: 15px;
+        font-weight: 600;
+        color:#001;
+        text-transform: uppercase;
+    }
+    
+    .trusted h3{
+      font-size: 20px;
+      font-weight: 550;
+      color: #001;   
+    }
+    .trusted .brands{
+        margin: 0;
+        padding:0;
+    } 
+    .trusted .brands{
+        display: block;
+        margin: 20px 10px 20px 8px;
+    }
+
+    .trusted .brands .brand .partner{
+        display: flex;
+    }
+    .trusted .brands .partner img{
+        width: 125px;
+        height:125px;
+        box-shadow: 1px 1px 50px rgba(0, 0, 17, 0.289);
+        margin: 23px;
+    }
+    .trusted .brands .partner img:hover{
+        transform: scale(1.2);
+    }
+
+    /* TRUSTED END */
+
+
+    .details{
+        background-color:#001;
+        height: 700px;
+        padding: 20px 0px;
+    }
+    
+    .contact {
+        color:#fff;
+        display:block;
+        margin: 10px 10px;
+    
+    }
+    
+    .group {
+        margin: 0px 10px 20px 10px;
+       
+    }
+    
+    #con3 {
+        color:darkgray;
+        font-weight: 200;
+        font-size: 10px;
+    }
+    
+    .group h2 {
+        font-size: 12px;
+    }
+    
+    .group a {
+        color:#fff;
+        text-decoration: none;
+        display: flex;
+        font-size: 10px;
+    }
+    
+    #con4{
+        display: flex;
+    }
+    
+    #con4 a{
+        margin: 0 20px 0 0;
+        
+    }
+    
+    .group a:hover{
+        color:#888;
+    }
+    
+    .copyrights{
+        color:white;
+        margin: 20px 22px;
+        display: flex;
+       
+      
+    }
+    
+    .copyrights ul{
+        float: right;
+        margin: 0 5px 0 9px;
+    }
+    
+    .copyrights li{
+        float: left;
+        display: block;
+        padding: 0px 5px 10px 5px;
+    }
+    
+    .copyrights li p a{
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .copyrights li p a:hover{
+        color:#888;
+    }
+
+  }

@@ -1,0 +1,154 @@
+<html>
+    <head>
+        <title>login</title>
+        <meta name="viewport"  content="width=device-width, initial-scale=1">
+        <link href="login.css" rel="stylesheet">
+        <link rel="icon" href="images/logo.png" sizes="96x192">
+    </head>
+    <script src="login.js"></script>
+    <body>
+        <!-- <header>
+            <div class="branding">
+                <img src="images/logostyle1.png" alt="logo">
+            </div>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="services.html">services</a></li>
+                        <!-- <li><a href="sign_up"> sign up</a></li>
+                        <li><a href="login">login</a></li> -
+                    </ul>
+                </nav>
+            </div>
+        </header> -->
+
+        
+        <section id="showcase">
+            <div class="container1">
+                
+                <!-- <form>
+                <h5><!--E-mail    -->
+                    <!-- <input type="username" placeholder="Enter username" size="30"> 
+                    <input type="email" placeholder="Enter email" size="30">
+                </h5>     
+                <h5><!--Password 
+                    <input type="password" placeholder="Enter password" size="30">
+                </h5>        
+                    <a href="services"> <button type="Login" class="botton_1" >Login</button></a>
+                    <a href="sign_up"> <button type="Login" class="botton_1" >signup</button></a>
+                </form>   
+                
+                    <a href="forget password"> forget password</a>
+                    <br><h5 style="color:black;"><bold>contact your portal admin if you forgot your password</bold></h5>
+            </div> --> 
+            
+            <div class= "login-page">
+                <h2>Andrews Design</h2>
+
+                <div class="page">
+                <div class= "form">
+                <form class="login">
+                    <h3>Login to your Account</h3>
+                    <p>Welcome to home of designs & creativity. We are ready to take your Orders</p>
+                    <h5>User-name</h5>
+                    <input type="text" placeholder="user-name" required>
+                    <h5>Password</h5>
+                    <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" 
+                    required  type="checkbox" onclick="show()" placeholder="" >
+                    
+    
+                    <div class="chebox">
+                    <div class="che">
+                      <input type="checkbox" id="check">
+                     <label for="check" class="checkbtn">Remember me</label>
+                     
+                    </div>
+                    
+                    <a href="#">forgot Password?</a>
+                </div>
+
+                <input type="submit" value="Login">
+                    <p class="message">Oops! you don't have an account?<a href="sign_up.html">  SIGNUP</a></p>
+                    <p class="home"><a href="index.html">Go Back Home</p>
+                </div>        
+                </form>
+                
+          
+            <div id="message">
+                <h3>Password must contain the following:</h3>
+                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                <p id="number" class="invalid">A <b>number</b></p>
+                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                
+              </div>
+            </div>
+        </div>
+
+        <script>
+            var myInput = document.getElementById("psw");
+            var letter = document.getElementById("letter");
+            var capital = document.getElementById("capital");
+            var number = document.getElementById("number");
+            var length = document.getElementById("length");
+            
+            // When the user clicks on the password field, show the message box
+            myInput.onfocus = function() {
+                document.getElementById("message").style.display = "block";
+            }
+            
+            // When the user clicks outside of the password field, hide the message box
+            myInput.onblur = function() {
+                document.getElementById("message").style.display = "none";
+            }
+            
+            // When the user starts to type something inside the password field
+            myInput.onkeyup = function() {
+              // Validate lowercase letters
+              var lowerCaseLetters = /[a-z]/g;
+              if(myInput.value.match(lowerCaseLetters)) {  
+                letter.classList.remove("invalid");
+                letter.classList.add("valid");
+              } else {
+                letter.classList.remove("valid");
+                letter.classList.add("invalid");
+              }
+              
+              // Validate capital letters
+              var upperCaseLetters = /[A-Z]/g;
+              if(myInput.value.match(upperCaseLetters)) {  
+                capital.classList.remove("invalid");
+                capital.classList.add("valid");
+              } else {
+                capital.classList.remove("valid");
+                capital.classList.add("invalid");
+              }
+            
+              // Validate numbers
+              var numbers = /[0-9]/g;
+              if(myInput.value.match(numbers)) {  
+                number.classList.remove("invalid");
+                number.classList.add("valid");
+              } else {
+                number.classList.remove("valid");
+                number.classList.add("invalid");
+              }
+              
+              // Validate length
+              if(myInput.value.length >= 8) {
+                length.classList.remove("invalid");
+                length.classList.add("valid");
+              } else {
+                length.classList.remove("valid");
+                length.classList.add("invalid");
+              }
+            }
+
+ 
+            </script>
+        </div>
+        </section>
+    </body>
+</html>

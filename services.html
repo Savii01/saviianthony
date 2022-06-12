@@ -1,0 +1,188 @@
+<html>
+    <head>
+        <title>andrews design</title>
+        <meta name="viewport"  content="width=device-width, initial-scale=1">
+        <link href="service.css" rel="stylesheet">
+        <link rel="icon" href="images/logo.png" sizes="96x192">
+        <link rel="stylesheet" href="fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css">
+    </head>
+    <script>    
+        // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+    <body>
+        <header>
+            <div class="container" id="my-container">
+                <nav>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn"> 
+                   <i class="fa fa-bars"></i>     
+                   </label>
+                    <label class="logo">Andrews Design</label>
+                    <ul>
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="services.html"class="active">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="sign_up.html"> Sign up</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li id="shop"><a href="add_to_cart.html">
+                            <i class="fa fa-shopping-cart"></i> (<span class="total-count"></span>)
+                            </a></li>
+            
+                    </ul>
+                </nav>
+            </div>
+        </header>
+       
+        <article>
+            <div class="container2">
+                <h2>Our Services</h2>
+                <p>We offer variety of services with the aim of growing your brand and making it marketable.</p>
+            </div>
+            <div class="portfolio">
+                <div id="carousel_wrapper">
+                   <div id="car">
+                    <div id="coli"> 
+                        <li id="work01">
+                            <button class="add-cart cart1" id="add" onclick="add()">add to cart</button>
+                        </li>
+                    <p>Logo Designs<br>$50.00</p>
+                    </div>    
+                    
+                    <div id="coli"> 
+                       <li id="work02">
+                        <button class="add-cart cart2" id="add" onclick="add()">add to cart</button>
+                       </li>
+                       <p>Mascot Designs<br>$50.00</p>
+                    </div>
+                </div>   
+                <div id="car">
+                    <div id="coli"> 
+                        <li id="work03">
+                            <button class="add-cart cart3" id="add" onclick="add()">add to cart</button>
+                        </li>
+                        <p>Book Cover<br>$50.00</p>
+                     </div>   
+    
+                     <div id="coli"> 
+                        <li id="work04">
+                            <button class="add-cart cart4" id="add" onclick="add()">add to cart</button>
+                        </li>
+                        <p>Business Cards<br>$50.00</p>
+                    </div>
+                </div>                        
+                </div> 
+            </div>
+            <div class="portfolio">
+                <div id="carousel_wrapper">
+                   <div id="car">
+                    <div id="coli"> 
+                        <li id="work05">
+                            <button class="add-cart cart5" id="add" onclick="add()">add to cart</button>
+                        </li>
+                        
+                    <p>Letterhead<br>$50.00</p>
+                    </div>    
+                    
+                    <div id="coli"> 
+                       <li id="work06">
+                        <button class="add-cart cart6"  id="add" onclick="add()">add to cart</button>
+                       </li>
+                       <p>Real Estate<br>$50.00</p>
+                    </div>
+                </div>   
+                <div id="car">
+                    <div id="coli"> 
+                        <li id="work07">
+                            <button class="add-cart cart7" id="add" onclick="add()">add to cart</button>
+                        </li>
+                        <p>Logo animation<br>$50.00</p>
+                     </div>   
+    
+                     <div id="coli"> 
+                        <li id="work08">
+                            <button class="add-cart cart8" id="add" onclick="add()">add to cart</button>
+                        </li>
+                        <p>Website Designs<br>$50.00</p>
+                    </div>
+                </div>                        
+                </div> 
+            </div>
+    
+            <div id="item">Item added to cart</div>
+      
+        <!-- <a href="services.html"><button>View More</button></a> -->
+        </article>
+
+        <div class="details">
+            <div class="contact">
+                <div class="group">
+                    <h2>Contact Info </h2>
+                    <p id="con3">Email Address</p>
+                    <p>saviour.andrew889@gmail.com</p>
+                    <p id="con3">Phone</p>
+                    <p>+234 904 9152 073</p>
+                </div>
+
+                <div class="group">
+                    <h2>Quick Links </h2>
+                    <div id="con4">
+                    <p><a href=index.html>Home</a></p>
+                    <p><a href="services.html">Services</a></p>
+                    </div>
+                    <div id="con4">
+                    <p><a href=sign_up.html>Sign Up</a></p>
+                    <p><a href="about.html">About Us</a></p>
+                    </div>
+                    <div id="con4">
+                    <p><a href=login.html>Login</a></p>
+                    <p><a href="contact.html">Contact Us</a></p>
+                    </div>
+                </div>
+
+                <div class="group" id="groupie">
+                    <h2>Reach Us </h2>
+                    <p id="con3">Do you have any Questions</p>
+                    <p><a href="contact.html">Get Answers</a></p>
+                    <p id="con3">Social Networks</p>
+                    <div id="con4">
+                    <p><a href="about.html">Facebook</a></p>
+                    <p><a href=login.html>Instagram</a></p>
+                    </div>
+                </div>
+            </div>  
+
+            <div class="copyrights">
+                <p>copyright@2022 AndrewsDesign.</p>
+                <ul>
+                    <li><p><a href="#">Privacy policy</a></p></li>
+                    <li><p>|</p></li>
+                    <li><p><a href="#">Terms & Condition</a></p></li>
+                </ul>
+
+            </div>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <!-- <img src="images/blue-arrow-up.png"> -->
+            <i class="fa fa-arrow-up"></i>
+        </button>
+    <script src="service.js"></script> 
+    <script src="cart.js"></script>   
+
+    </body>
+</html>

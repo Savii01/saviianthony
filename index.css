@@ -1,0 +1,2350 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+}
+
+/* header begining */
+
+header {
+    background-color:#fff;
+    margin: 0;
+    padding: 20px;    
+    justify-content:space-between;
+    width: 100%;
+    position: fixed; 
+    height: 50px;
+    z-index: 1;
+    box-shadow:10px 5px 10px rgba(0, 0, 0, 0.178);
+    transition: top 0.3s;
+    top: 0px;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px;
+    color: #001;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    margin: 0 0 0 30px;
+}
+
+header nav {
+    margin-bottom: 50px;
+    height: 20px; 
+} 
+
+header ul {
+    float: right;
+    margin: 0 40px 0 20px;
+    padding: 0 20px 20px 0;
+    
+}
+
+.container li {
+    float: left;
+    display: block;
+    padding: 20px 15px 50px 15px;
+ }
+
+.container a {
+    color: #001;
+    text-decoration: none; 
+    text-transform: uppercase;
+    padding: 10px 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.container a.active, .container a:hover{
+   color: #888;
+   transition: .5s;
+   border-radius: 10px;
+   padding: 20px 10px;
+} 
+
+.container #modal-btn{
+    background-color: #fff;
+    color:#001;
+    border: none;
+
+}
+
+.container #modal-btn:hover{
+    background-color: #fff;
+    color:#888;
+    border: none;
+}    
+
+
+
+
+#check, #check + label {
+    display: none;
+    font-size: 30px;
+    float: right;
+    color: #001;
+    margin-right:50px ;
+}
+
+
+/* header end */
+
+section {
+    color: white;
+    text-align: center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.919),rgba(0,0,0,0.6)),  url("images/brand-branding-advertising-commercial-marketing-concept.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+    min-height: 500px;
+    margin: 0;
+    padding: 90px 50px 0px 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.474);
+    z-index: 1;
+}
+
+section .col{
+    margin: 50px 0 0 200px
+}
+
+section h1 {
+    font-size: 60px;
+}
+
+section p {
+font-size: 15px;
+font-weight:200;
+line-height: 30px;
+}
+
+section a {
+    color: rgb(255, 255, 255);
+}
+
+ section button {
+    outline: 0;
+    background: white;
+    text-transform: uppercase;
+    width: 200px;
+    padding: 15px;
+    border: 0;
+    color: #001;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 10px 5px 100px black ;
+}
+
+
+section button:hover {
+    background-color: #001;
+    color: white;
+    text-decoration: none;
+    box-shadow: 5px 5px 100px black ;
+    transition:  2s;
+   
+
+}
+
+section img {
+    float: right;
+    height:500px ;
+}
+
+.container1 {
+    display: flex;
+}
+
+article {
+    text-align: center;
+    background: white;
+    color: #000011;
+    height: 900px;
+    padding: 10px 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.474);
+}
+
+article h2 {
+    font-size: 40px;
+    line-height: 30px;
+}
+
+article p {
+    font-size: 15px;
+    font-weight:200;
+    line-height: 30px;
+
+}
+
+
+#carousel_wrapper {
+    clear: left;
+    height: 350px;
+    display:flex;
+    margin-left: 95px;
+}
+
+#car{
+    display: flex;
+}
+
+#coli{
+    margin: 30px;
+    max-width: 200px;
+    height: 280px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 20px 30px 50px #00000033;
+    align-items: center;
+    padding: 5px;
+    color: #001;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+#coli:hover{
+    transform: scale(1.1);
+}
+
+#coli p{
+    font-weight: 600;
+}
+
+#carousel_wrapper li, #portfolio_list li {
+    height: 200px;
+    width: 200px;
+    list-style: none;
+    align-content: center;
+    border-radius: 20px;
+}
+
+#carousel_wrapper #coli li .add-cart , #portfolio_list li button  {
+    visibility: hidden;
+    background: #555;
+    color: #fff;
+    width: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top:0;
+    text-transform:uppercase ;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+
+#item {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #001;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 30px;
+    font-size: 17px;
+}
+
+#item.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+
+@keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 30px; opacity: 1;}
+}
+
+
+
+@keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+}
+
+
+
+
+#carousel_wrapper #coli li:hover .add-cart , #portfolio_list li:hover  {
+    visibility: visible;
+}
+
+#work01 {
+    background-image: url("images/anny.jpg");
+    background-size:contain;
+
+}
+
+#work02 {
+    background-image: url("images/FB_IMG_16284046582783728.jpg");
+    background-size:contain;
+}
+
+#work03 {
+    background: url("images/template4.jpg") ;
+    background-size:contain;
+}
+
+#work04 {
+    background: url("images/mark.jpg") ;
+    background-size:contain;
+}
+
+#work05 {
+    background: url("images/mockup_3.jpg") ;
+    background-size:contain;
+}
+
+#work06 {
+    background-image: url("images/propertio_d_second_1.jpg");
+    background-size:contain;
+}
+
+#work07 {
+    background: url("images/anny.gif");
+    background-size:contain;
+}
+
+#work08 {
+    background: url("images/about-img1.jpg");
+    background-size:contain;
+}
+
+#work10 {
+    background: url(../images/latest_work10.jpg) no-repeat;
+}
+
+
+
+
+
+article button {
+    outline: 0;
+    background:#001;
+    text-transform: uppercase;
+    width: 10%;
+    padding: 10px;
+    border: 0;
+    color:  #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+article button:hover {
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+    transition:  .5s;
+    width: 15%;
+}
+
+
+.value {
+    padding: 10px 50px;
+    color: #001;
+    background: #fff;
+    height: 600px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.474);
+}
+
+.value h2 {
+    font-size: 40px;
+    line-height: 30px;
+}
+
+.value p {
+    font-size: 15px;
+    font-weight:200;
+    line-height: 30px;
+
+}
+
+.con2{
+    float:right;
+    }
+
+.img{
+width: 600px; 
+height: 400px; 
+margin: 0 50px 0 100px;
+}
+
+#col{
+    display: flex;
+}
+
+.con1 button {
+    width: 200px;
+    margin: 10px 0;
+    outline: 0;
+    background: #fff;
+    box-shadow:  20px 5px 50px #00000033;
+    padding: 10px;
+    border: 0;
+    color:  #001;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+
+.con1 button:hover {
+    width: 220px;
+    margin: 10px 0;
+    background: #001;
+    color: #fff;
+    transition:  1s;
+    
+}
+
+.viewbtn a button {
+    width: 200px;
+    margin: 10px 0 0 40px ;
+    outline: 0;
+    background: #fff;
+    box-shadow:  20px 5px 50px #00000033;
+    padding: 10px;
+    border: 0;
+    color:  #001;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+
+ .viewbtn button:hover {
+    width: 220px;
+    background: #001;
+    color: #fff;
+    transition:  1s;
+    
+}
+
+
+.plans {
+    padding: 10px 50px;
+    background-color: lightgray;
+    min-height: 800px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.474);
+}
+
+.plans h2 {
+    font-size: 40px;
+    line-height: 30px;
+}
+
+
+.plans p {
+    font-size: 15px;
+    font-weight:200;
+    line-height: 20px;
+}
+
+.slideshow-container1 {
+    position: relative;
+    display: inline-block;
+    box-shadow:10px 10px 50px #00000033;
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 20px;
+   
+}
+
+.mySlides1{
+    display: none;
+    text-align: justify;
+    padding: 50px;
+}
+
+.mySlides1:first-child{
+    display: block;
+}
+
+
+.prev1, .next1 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    margin-top: -30px;
+    padding: 10px;
+    color: #001;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 50%;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .prev1{
+      position: absolute;
+      left: 0;
+
+  }
+
+  .next1 {
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev1:hover, .next1:hover {
+    background-color: #001;
+    color: white;
+  }
+
+.plan1 {
+    font-size: 18px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.186);
+    line-height: 30px;
+    color: #001;
+}
+
+.mySlides1 h2 {
+    font-size: 30px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.186);
+    line-height: 30px;
+    font-weight: 900px;
+    color: #001;
+}
+
+.mySlides1 p {
+    font-size: 15px;
+    font-weight:200;
+    line-height: 20px;
+    color: #001;
+}
+
+.mySlides1 button {
+    width: 200px; 
+    margin: 10px 0;
+    outline: 0;
+    background: #001;
+    padding: 10px;
+    border: 0;
+    color:  #fff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.mySlides1 button:hover {
+    width: 220px;
+    background-color: #888;
+    color: #fff;
+    text-decoration: none;
+    transition:  1s;
+    
+}
+
+/* The dot/bullet/indicator container */
+.dot-container1 {
+    text-align: center;
+    padding: 20px;
+    
+}
+
+/* The dots/bullets/indicators */
+.dot1 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot1:hover {
+  background-color: #001;
+}
+
+ .test {
+    padding: 10px 50px;
+    background-color: #fff;
+    height: 700px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.474);
+}
+
+.test h2 {
+    font-size: 40px;
+    line-height: 30px;
+}
+
+
+.test p {
+    font-size: 15px;
+    font-weight:200;
+    line-height: 20px;
+}
+/* test_box {
+    display: flex;
+    margin: 0;
+}
+
+
+.test_box1 {
+    margin: 30px;
+    max-width: 400px;
+    min-width: 100px;
+    min-height: 400px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 20px 30px 50px #00000033;
+    text-align: justify ;
+    padding: 30px;
+    color: #001;
+    text-decoration: none;
+    cursor: pointer;
+    display: none;
+}
+
+.test_box1 h3 {
+    font-size: 18px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.186);
+    line-height: 30px;
+}
+
+.test_box1 h2 {
+    font-size: 30px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.186);
+    line-height: 30px;
+    font-weight: 900px;
+}
+
+.test_box1 p {
+    font-size: 17px;
+    font-weight:300px;
+    line-height: 30px;
+   font-style: italic;
+   color:rgba(0, 0, 0, 0.611) ;
+}  */
+
+/* {box-sizing: border-box} */
+
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    box-shadow:10px 10px 50px #00000033;
+    margin: 20px;
+    border-radius: 20px;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .mySlides img {
+    width: 150px;
+    height:150px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border:#fff solid 4px;
+    box-shadow: 10px 10px 50px #00000033;
+    margin-top: 10px;
+  }
+  
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 22px;
+    margin-top: -30px;
+    padding: 15px;
+    color: #001;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 50%;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .prev{
+      position: absolute;
+      left: 0;
+
+  }
+
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: #001;
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+      text-align: center;
+      padding: 20px;
+    
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: lightgray;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #001;
+  }
+  
+  /* Add an italic font style to all quotes */
+  .jo {
+      font-style: italic;
+    }
+  
+  /* Add a blue color to the author */
+  .author {
+      color: #001;
+    }
+
+.job{
+    color:#888;
+    font-style: normal;
+}
+
+.details{
+    background-color:#001;
+    height: 360px;
+    padding: 20px 30px;
+}
+.contact {
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.656);
+    line-height: 20px;
+    color:#fff;
+    display: flex;
+    margin: 20px 20px;
+}
+
+.group {
+    margin: 0px 100px 20px 100px;
+   
+}
+
+.group h2{
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.656);
+    line-height: 20px;
+}
+
+#con3 {
+    color:darkgray;
+    font-weight: 200;
+}
+
+.group a {
+    color:#fff;
+    text-decoration: none;
+    display: flex;
+}
+
+#con4{
+    display: flex;
+}
+
+#con4 a{
+    margin: 0 20px 0 0;
+    
+}
+
+.group a:hover{
+    color:#888;
+}
+
+.copyrights{
+    color:white;
+    margin: 20px 120px;
+    display: flex;
+   
+  
+}
+
+.copyrights ul{
+    float: right;
+    margin: 0 40px 0 400px;
+}
+
+.copyrights li{
+    float: left;
+    display: block;
+    padding: 0px 15px 50px 15px;
+}
+
+.copyrights li p a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyrights li p a:hover{
+    color:#888;
+}
+
+
+#myBtns {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    width: 60px;
+    height: 60px;
+    color:#001;
+    font-size: 18px;
+    box-shadow: 1px 1px 50px rgba(0, 0, 17, 0.289);
+  }
+
+  
+  #myBtns:hover {
+    background-color: #555;
+    color: #fff;
+  }
+
+
+@media screen and (max-width: 768px){
+    body{
+        font-size: 7.5px;
+        width: 100%;
+    }
+
+    header{
+        padding: 30px; 
+    }
+
+    .logo{
+        font-size: 25px;
+    }
+
+    header nav header ul .container li .container a{
+        font-size: 16px;
+    }
+
+   
+#check, #check + label {
+    display: block;
+}
+
+
+header ul{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background:#fff;
+        top: 87px;
+        right: -100%;
+        text-align: center;
+        transition: .2s;
+        z-index: 1;
+    }
+    .container li{
+        padding: 50px 0 50px 0;
+        float: none;
+    }
+
+    .container  a{
+        font-size: 25px;
+        color: #001; 
+        font-weight: 600;
+    }
+
+
+
+
+    header nav header ul .container li .container  a{
+        display: block;
+        float: none;
+        font-size: 20px;
+        color: #001;
+    } 
+    
+    
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+
+section {
+    color: white;
+    text-align: center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.919),rgba(0,0,0,0.6)), url("images/brand-branding-advertising-commercial-marketing-concept.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    margin: 0;
+    padding: 90px 0px 0px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.474);
+    
+    z-index: 1;
+}
+
+section .col{
+    margin: 50px 30px 0 40px
+}
+
+section h1 {
+    font-size: 50px;
+}
+
+section p {
+font-size: 12px;
+font-weight:200;
+line-height: 30px;
+}
+
+section a {
+    color: rgb(255, 255, 255);
+}
+
+ section button {
+    outline: 0;
+    background: white;
+    text-transform: uppercase;
+    width: 150px;
+    padding: 15px;
+    border: 0;
+    color: #001;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 10px 5px 100px black ;
+}
+
+
+section button:hover {
+    background-color: #001;
+    color: white;
+    text-decoration: none;
+    box-shadow: 5px 5px 100px black ;
+    transition: .5s;
+}
+
+article {
+    text-align: center;
+    background: lightgray;
+    color: #001;
+    height:1600px;
+    padding: 10px 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.474);
+}
+
+article h2 {
+    font-size: 40px;
+    line-height: 30px;
+}
+
+article p {
+    font-size: 15px;
+    font-weight:200;
+    line-height: 30px;
+
+}
+
+#carousel_wrapper {
+    border-top: 1px solid #dfe1e5;
+    border-bottom: 1px solid #dfe1e5;
+    clear: left;
+    height: 700px;
+    display:inline-block;
+    margin-left: 10px;
+}
+
+#car{
+    display: flex;
+}
+
+#coli p{
+    font-weight: 600;
+}
+
+
+#carousel_wrapper li, #portfolio_list li {
+    height: 200px;
+    width: 200px;
+    list-style: none;
+    align-content: center;
+    border-radius: 20px;
+}
+
+
+#carousel_wrapper #coli li:hover a p, #portfolio_list li:hover  {
+    visibility: visible;
+}
+
+#work01 {
+    background-image: url("images/anny.jpg");
+    background-size:contain;
+
+}
+
+#work02 {
+    background-image: url("images/FB_IMG_16284046582783728.jpg");
+    background-size:contain;
+}
+
+#work03 {
+    background: url("images/template4.jpg") ;
+    background-size:contain;
+}
+
+#work04 {
+    background: url("images/mark.jpg") ;
+    background-size:contain;
+}
+
+#work05 {
+    background: url("images/mockup_3.jpg") ;
+    background-size:contain;
+}
+
+#work06 {
+    background-image: url("images/propertio_d_second_1.jpg");
+    background-size:contain;
+}
+
+#work07 {
+    background: url("images/anny1.gif");
+    background-size:contain;
+}
+
+#work08 {
+    background: url("images/about-img1.jpg");
+    background-size:contain;
+}
+
+
+.value {
+    padding: 10px 50px;
+    color: #001;
+    background: #fff;
+    height: 750px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.474);
+    display: inline-block;
+    text-align: center;
+}
+
+.value h2 {
+    font-size: 40px;
+    line-height: 30px;
+}
+
+.value p {
+    font-size: 15px;
+    font-weight:200;
+    line-height: 30px;
+
+}
+
+.img{
+    width: 400px; 
+    height: 250px; 
+    margin: 0 50px 0 50px;
+    }
+    .con2{
+        display: block;
+        float:left;
+        margin: 0 0 0 70px;
+    }
+
+#col{
+    margin: 50px 0 0 70px;
+    float: left;
+}
+
+#col button {
+    width: 200px;
+    margin: 10px 0;
+    outline: 0;
+    background: #fff;
+    box-shadow:  20px 5px 50px #00000033;
+    padding: 10px;
+    border: 0;
+    color:  #001;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#col button:hover {
+    width: 220px;
+    margin: 10px 0;
+    background: #001;
+    color: #fff;
+    transition:  1s;
+    
+}
+
+
+
+.plans {
+    padding: 10px 50px;
+    background-color: lightgray;
+    min-height: 800px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.474);
+}
+
+
+.test {
+    padding: 10px 50px;
+    background-color: #fff;
+    height: 700px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.474);
+}
+
+
+.details{
+    background-color:#001;
+    height: 700px;
+    padding: 20px 0px;
+}
+
+.contact {
+    color:#fff;
+    display:block;
+    margin: 10px 10px;
+
+}
+
+.group {
+    margin: 0px 50px 20px 70px;
+}
+
+#con3 {
+    color:darkgray;
+    font-weight: 200;
+}
+
+.group a {
+    color:#fff;
+    text-decoration: none;
+    display: flex;
+}
+
+#con4{
+    display: flex;
+}
+
+#con4 a{
+    margin: 0 20px 0 0;
+    
+}
+
+.group a:hover{
+    color:#888;
+}
+
+.copyrights{
+    color:white;
+    margin: 20px 80px;
+    display: flex;
+   
+  
+}
+
+.copyrights ul{
+    float: right;
+    margin: 0 5px 0 250px;
+}
+
+.copyrights li{
+    float: left;
+    display: block;
+    padding: 0px 5px 10px 5px;
+}
+
+.copyrights li p a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyrights li p a:hover{
+    color:#888;
+}
+
+}
+
+@media screen and (max-width: 414px){
+    body{
+        font-size: 7.5px;
+        width: 100%;
+    }
+
+    header{
+        padding: 34px; 
+        height: 20px;
+    }
+
+    .logo{
+        font-size: 20px;
+        margin: 0 0 0 5px;
+    }
+
+    header nav header ul .container li .container a{
+        font-size: 14px;
+    }
+
+#check, #check + label {
+    display: block;
+    font-size: 25px;
+    float: right;
+    color: #001;
+    margin-right:40px;
+} 
+
+
+header ul{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background:rgb(255, 255, 255);
+        top: 87px;
+        right: -100%;
+        text-align: center;
+        transition: .2s;
+        z-index: 1;
+    }
+    .container li{
+        padding: 30px 0 30px 0;
+        float: none;
+    }
+
+    .container  a{
+        font-size: 20px;
+        color: #001; 
+        font-weight: 600;
+    }
+
+
+
+    header nav header ul .container li .container  a{
+        display: block;
+        float: none;
+        font-size: 20px;
+        color: #001;
+    } 
+    
+   
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+
+section {
+    color: white;
+    text-align: center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.919),rgba(0,0,0,0.6)), url("images/brand-branding-advertising-commercial-marketing-concept.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin: 0;
+    padding:200px 0px 0px 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.474);
+    
+    z-index: 1;
+}
+
+section .col{
+    margin: 40px 30px 0 20px
+}
+
+section h1 {
+    font-size: 40px;
+}
+
+section p {
+font-size: 12px;
+font-weight:200;
+line-height: 25px;
+}
+
+section a {
+    color: rgb(255, 255, 255);
+}
+
+section button {
+    outline: 0;
+    background: white;
+    text-transform: uppercase;
+    width:100px;
+    padding: 10px;
+    border: 0;
+    color: #001;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 10px 5px 100px black ;
+    font-size: 11px;
+    line-height: 10px;
+}
+
+
+article {
+    text-align: center;
+    background: white;
+    color: #001;
+    height:1100px;
+    padding: 10px 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.474);
+}
+
+article h2 {
+    font-size: 20px;
+    line-height: 15px;
+}
+
+article p {
+    font-size: 11px;
+    font-weight:200;
+    line-height: 15px;
+
+}
+
+#carousel_wrapper {
+    border-top: 1px solid #dfe1e5;
+    border-bottom: 1px solid #dfe1e5;
+    clear: left;
+    height: 470px;
+    display:inline-block;
+    margin-left: 0px;
+}
+
+#car{
+    display: flex;
+   
+}
+
+#coli{
+    margin: 10px;
+    max-width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 20px 30px 50px #00000033;
+    align-items: center;
+    padding: 5px;
+    color: #001;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#coli p{
+    font-weight: 600;
+}
+
+
+#carousel_wrapper li, #portfolio_list li {
+    height: 125px;
+    width: 125px;
+    list-style: none;
+    align-content: center;
+    border-radius: 20px;
+}
+
+#carousel_wrapper #coli li .add-cart{
+    visibility: hidden;
+    background: #888;
+    color: #fff;
+    width: 125px;
+    border-top-right-radius: 20px;
+    margin-top:0;
+    text-transform:uppercase ;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px;
+    outline: 0;
+    border: 0;
+    border-radius: 20px;
+}
+
+
+
+#carousel_wrapper #coli li:hover .add-cart, #portfolio_list li:hover  {
+    visibility: visible;
+}
+
+#work01 {
+    background-image: url("images/anny.jpg");
+    background-size:contain;
+
+}
+
+#work02 {
+    background-image: url("images/FB_IMG_16284046582783728.jpg");
+    background-size:contain;
+}
+
+#work03 {
+    background: url("images/template4.jpg") ;
+    background-size:contain;
+}
+
+#work04 {
+    background: url("images/mark.jpg") ;
+    background-size:contain;
+}
+
+#work05 {
+    background: url("images/mockup_3.jpg") ;
+    background-size:contain;
+}
+
+#work06 {
+    background-image: url("images/propertio_d_second_1.jpg");
+    background-size:contain;
+}
+
+#work07 {
+    background: url("images/anny1.gif");
+    background-size:contain;
+}
+
+#work08 {
+    background: url("images/about-img1.jpg");
+    background-size:contain;
+}
+
+article button {
+    outline: 0;
+    background: #001;
+    text-transform: uppercase;
+    width: 100px;
+    padding: 10px;
+    border: 0;
+    color:  #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 11px;
+    margin-top:10px ;
+}
+
+article button:hover {
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+    transition:  1s;
+    width: 120px;
+}
+
+
+.value {
+    margin: 0;
+    padding: 10px 20px 10px 0;
+    color: #001;
+    background: #fff;
+    height: 650px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.474);
+    display: inline-block;
+    text-align: center;
+}
+
+.value h2 {
+    font-size: 20px;
+    line-height: 15px;
+}
+
+.value p {
+    font-size: 11px;
+    font-weight: 200;
+    line-height: 15px;
+
+}
+
+.img{
+    width: 300px; 
+    height: 210px; 
+    margin: 0 20px 0 10px;
+    }
+
+.con2{
+    display: block;
+    float:left;
+    margin: 0 0 0 40px;
+}
+
+
+#col{
+    margin: 50px 20px 0 20px;
+    left: 0;
+    display: flex;
+}
+
+#col button {
+    width: 120px;
+    margin: 10px 0;
+    outline: 0;
+    background: #fff;
+    box-shadow:  20px 5px 50px #00000033;
+    padding: 10px;
+    border: 0;
+    color:  #001;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 11px;
+}
+
+#col button:hover {
+   transform: scale(1) ;
+    margin: 10px 0;
+    background: #001;
+    color: #fff;
+    transition:  1s;
+    width: 122px;
+}
+
+.viewbtn a button {
+    width: 150px;
+    margin: 10px 0 0 20px ;
+    outline: 0;
+    background: #fff;
+    box-shadow:  20px 5px 50px #00000033;
+    padding: 10px;
+    border: 0;
+    color:  #001;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 11px;
+}
+
+
+
+ .viewbtn button:hover {
+    width: 155px;
+    background: #001;
+    color: #fff;
+    transition:  1s;
+    
+}
+
+
+.plans {
+    padding: 10px 50px;
+    background-color: lightgray;
+    min-height: 800px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.474);
+}
+
+.plans h2 {
+    font-size: 20px;
+    line-height: 15px
+}
+
+
+.plans p {
+    font-size: 11px;
+    font-weight:200;
+    line-height: 15px;
+}
+
+.slideshow-container1 {
+    position: relative;
+    display: inline-block;
+    box-shadow:10px 10px 50px #00000033;
+    width: 300px;
+    height: 600px;
+    background-color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 20px 15px 0 0;
+   
+}
+
+.prev1, .next1 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    margin-top: -30px;
+    padding: 10px;
+    color: #001;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 50%;
+    user-select: none;
+  }
+
+.mySlides1 h2 {
+    font-size: 30px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.186);
+    line-height: 30px;
+    font-weight: 900px;
+    color: #001;
+}
+
+.mySlides1 p {
+    font-size: 15px;
+    font-weight:200;
+    line-height: 30px;
+    color: #001;
+}
+
+.mySlides1 button {
+    width: 150px; 
+    margin: 10px 0;
+    outline: 0;
+    background: #001;
+    padding: 10px;
+    border: 0;
+    color:  #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 11px;
+}
+
+
+
+.test {
+    padding: 10px 50px;
+    background-color: #fff;
+    height: 500px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.474);
+}
+.test h2 {
+    font-size: 20px;
+    line-height: 15px
+}
+
+
+.test p {
+    font-size: 11px;
+    font-weight:200;
+    line-height: 15px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    box-shadow:10px 10px 50px #00000033;
+    margin: 20px 15px 0 0;
+    border-radius: 20px;
+  }
+
+   /* Slides */
+   .mySlides {
+    display: none;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .mySlides img {
+    width: 100px;
+    height:100px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border:#fff solid 4px;
+    box-shadow: 10px 10px 50px #00000033;
+    margin-top: 10px;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 22px;
+    margin-top: -30px;
+    padding: 10px;
+    color: #001;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 50%;
+    user-select: none;
+  }
+
+  .details{
+    background-color:#001;
+    height: 700px;
+    padding: 20px 0px;
+}
+
+.contact {
+    color:#fff;
+    display:block;
+    margin: 10px 10px;
+
+}
+
+.group {
+    margin: 0px 10px 20px 10px;
+   
+}
+
+#con3 {
+    color:darkgray;
+    font-weight: 200;
+    font-size: 10px;
+}
+
+.group h2 {
+    font-size: 12px;
+}
+
+.group a {
+    color:#fff;
+    text-decoration: none;
+    display: flex;
+    font-size: 10px;
+}
+
+#con4{
+    display: flex;
+}
+
+#con4 a{
+    margin: 0 20px 0 0;
+    
+}
+
+.group a:hover{
+    color:#888;
+}
+
+.copyrights{
+    color:white;
+    margin: 20px 22px;
+    display: flex;
+   
+  
+}
+
+.copyrights ul{
+    float: right;
+    margin: 0 5px 0 9px;
+}
+
+.copyrights li{
+    float: left;
+    display: block;
+    padding: 0px 5px 10px 5px;
+}
+
+.copyrights li p a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyrights li p a:hover{
+    color:#888;
+}
+
+}
+
+@media screen and (max-width: 390px){
+    body{
+        font-size: 7.5px;
+        width: 100%;
+    }
+
+    header{
+        padding: 24px; 
+        height: 20px;
+    }
+
+    .logo{
+        font-size: 17px;
+        margin: 0 0 0 3px;
+    }
+
+    header nav header ul .container li .container a{
+        font-size: 14px;
+    }
+
+#check, #check + label {
+    display: block;
+    font-size: 25px;
+    float: right;
+    color: #001;
+    margin-right:35px;
+} 
+
+
+header ul{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background:rgb(255, 255, 255);
+        top: 68px;
+        right: -100%;
+        text-align: center;
+        transition: .2s;
+        z-index: 1;
+    }
+    .container li{
+        padding: 30px 0 30px 0;
+        float: none;
+    }
+
+    .container  a{
+        font-size: 18px;
+        color: #001; 
+        font-weight: 600;
+    }
+
+
+
+    header nav header ul .container li .container  a{
+        display: block;
+        float: none;
+        font-size: 20px;
+        color: #001;
+    } 
+    
+   
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+
+section {
+    color: white;
+    text-align: center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.919),rgba(0,0,0,0.6)), url("images/brand-branding-advertising-commercial-marketing-concept.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin: 0;
+    padding:200px 0px 0px 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.474);
+    
+    z-index: 1;
+}
+
+section .col{
+    margin: 40px 30px 0 20px
+}
+
+section h1 {
+    font-size: 40px;
+}
+
+section p {
+font-size: 12px;
+font-weight:200;
+line-height: 25px;
+}
+
+section a {
+    color: rgb(255, 255, 255);
+}
+
+section button {
+    outline: 0;
+    background: white;
+    text-transform: uppercase;
+    width:100px;
+    padding: 10px;
+    border: 0;
+    color: #001;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 10px 5px 100px black ;
+    font-size: 11px;
+    line-height: 10px;
+}
+
+
+article {
+    text-align: center;
+    background: white;
+    color: #001;
+    height:1100px;
+    padding: 10px 15px 10px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.474);
+}
+
+article h2 {
+    font-size: 20px;
+    line-height: 15px;
+}
+
+article p {
+    font-size: 11px;
+    font-weight:200;
+    line-height: 15px;
+
+}
+
+#carousel_wrapper {
+    border-top: 1px solid #dfe1e5;
+    border-bottom: 1px solid #dfe1e5;
+    clear: left;
+    height: 470px;
+    display:inline-block;
+    margin-left: 0px;
+}
+
+#car{
+    display: flex;
+   
+}
+
+#coli{
+    margin: 10px;
+    max-width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 20px 30px 50px #00000033;
+    align-items: center;
+    padding: 5px;
+    color: #001;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#coli p{
+    font-weight: 600;
+}
+
+
+#carousel_wrapper li, #portfolio_list li {
+    height: 125px;
+    width: 125px;
+    list-style: none;
+    align-content: center;
+    border-radius: 20px;
+}
+
+#carousel_wrapper #coli li button{
+    visibility: hidden;
+    background: #888;
+    color: #fff;
+    width: 125px;
+    border-top-right-radius: 20px;
+    margin-top:0;
+    text-transform:uppercase ;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px;
+    outline: 0;
+    border: 0;
+    border-radius: 20px;
+}
+
+
+
+#carousel_wrapper #coli li:hover a p, #portfolio_list li:hover  {
+    visibility: visible;
+}
+
+#work01 {
+    background-image: url("images/anny.jpg");
+    background-size:contain;
+
+}
+
+#work02 {
+    background-image: url("images/FB_IMG_16284046582783728.jpg");
+    background-size:contain;
+}
+
+#work03 {
+    background: url("images/template4.jpg") ;
+    background-size:contain;
+}
+
+#work04 {
+    background: url("images/mark.jpg") ;
+    background-size:contain;
+}
+
+#work05 {
+    background: url("images/mockup_3.jpg") ;
+    background-size:contain;
+}
+
+#work06 {
+    background-image: url("images/propertio_d_second_1.jpg");
+    background-size:contain;
+}
+
+#work07 {
+    background: url("images/anny1.gif");
+    background-size:contain;
+}
+
+#work08 {
+    background: url("images/about-img1.jpg");
+    background-size:contain;
+}
+
+article button {
+    outline: 0;
+    background: #001;
+    text-transform: uppercase;
+    width: 100px;
+    padding: 10px;
+    border: 0;
+    color:  #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 11px;
+    margin-top:10px ;
+}
+
+article button:hover {
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+    transition:  1s;
+    width: 120px;
+}
+
+
+.value {
+    margin: 0;
+    padding: 10px 5px 10px 0;
+    color: #001;
+    background: #fff;
+    height: 620px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.474);
+    display: inline-block;
+    text-align: center;
+}
+
+.value h2 {
+    font-size: 20px;
+    line-height: 15px;
+}
+
+.value p {
+    font-size: 10px;
+    font-weight: 200;
+    line-height: 15px;
+
+}
+
+.img{
+    width: 300px; 
+    height: 210px; 
+    margin: 0 20px 0 0px;
+    }
+
+.con2{
+    display: block;
+    float:left;
+    margin: 0 0 0 30px;
+}
+
+
+#col{
+    margin: 50px 20px 0 10px;
+    left: 0;
+    display: flex;
+}
+
+#col button {
+    width: 115px;
+    margin: 10px 0;
+    outline: 0;
+    background: #fff;
+    box-shadow:  20px 5px 50px #00000033;
+    padding: 10px;
+    border: 0;
+    color:  #001;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 11px;
+}
+
+#col button:hover {
+   transform: scale(1) ;
+    margin: 10px 0;
+    background: #001;
+    color: #fff;
+    transition:  1s;
+    width: 117px;
+}
+
+.viewbtn a button {
+    width: 150px;
+    margin: 10px 0 0 20px ;
+    outline: 0;
+    background: #fff;
+    box-shadow:  20px 5px 50px #00000033;
+    padding: 10px;
+    border: 0;
+    color:  #001;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 11px;
+}
+
+
+
+ .viewbtn button:hover {
+    width: 155px;
+    background: #001;
+    color: #fff;
+    transition:  1s;
+    
+}
+
+
+.plans {
+    padding: 10px 0px ;
+    background-color: lightgray;
+    min-height: 800px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.474);
+}
+
+.plans h2 {
+    font-size: 20px;
+    line-height: 15px
+}
+
+
+.plans p {
+    font-size: 11px;
+    font-weight:200;
+    line-height: 15px;
+}
+
+.slideshow-container1 {
+    position: relative;
+    display: inline-block;
+    box-shadow:10px 10px 50px #00000033;
+    width: 300px;
+    height: 600px;
+    background-color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 20px 5px 0 0px;
+   
+}
+
+.prev1, .next1 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    margin-top: -30px;
+    padding: 10px;
+    color: #001;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 50%;
+    user-select: none;
+  }
+
+.mySlides1 h2 {
+    font-size: 30px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.186);
+    line-height: 30px;
+    font-weight: 900px;
+    color: #001;
+}
+
+.mySlides1 p {
+    font-size: 15px;
+    font-weight:200;
+    line-height: 30px;
+    color: #001;
+}
+
+.mySlides1 button {
+    width: 150px; 
+    margin: 10px 0;
+    outline: 0;
+    background: #001;
+    padding: 10px;
+    border: 0;
+    color:  #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 11px;
+}
+
+
+
+.test {
+    padding: 10px 0px;
+    background-color: #fff;
+    height: 500px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.474);
+}
+.test h2 {
+    font-size: 20px;
+    line-height: 15px
+}
+
+
+.test p {
+    font-size: 11px;
+    font-weight:200;
+    line-height: 15px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    box-shadow:10px 10px 50px #00000033;
+    margin: 20px 5px 0 0;
+    border-radius: 20px;
+  }
+
+   /* Slides */
+   .mySlides {
+    display: none;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .mySlides img {
+    width: 100px;
+    height:100px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border:#fff solid 4px;
+    box-shadow: 10px 10px 50px #00000033;
+    margin-top: 10px;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 22px;
+    margin-top: -30px;
+    padding: 10px;
+    color: #001;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 50%;
+    user-select: none;
+  }
+
+  .details{
+    background-color:#001;
+    height: 600px;
+    padding: 20px 0px;
+}
+
+.contact {
+    color:#fff;
+    display:block;
+    margin: 10px 10px;
+
+}
+
+.group {
+    margin: 0px 10px 20px 10px;
+   
+}
+
+#con3 {
+    color:darkgray;
+    font-weight: 200;
+    font-size: 10px;
+}
+
+.group h2 {
+    font-size: 12px;
+}
+
+.group a {
+    color:#fff;
+    text-decoration: none;
+    display: flex;
+    font-size: 10px;
+}
+
+#con4{
+    display: flex;
+}
+
+#con4 a{
+    margin: 0 20px 0 0;
+    
+}
+
+.group a:hover{
+    color:#888;
+}
+
+.copyrights{
+    color:white;
+    margin: 20px 20px;
+    display: flex;
+   
+  
+}
+
+.copyrights ul{
+    float: right;
+    margin: 0 5px 0 5px;
+}
+
+.copyrights li{
+    float: left;
+    display: block;
+    padding: 0px 2px 10px 2px;
+}
+
+.copyrights li p a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyrights li p a:hover{
+    color:#888;
+}
+
+}

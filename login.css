@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.919),rgba(0,0,0,0.6)), 
+    url("images/young-woman-with-long-blonde-hair-listening-african-man-blue-shirt-which-using-laptop-indoor-portrait-black-asian-office-workers-talking-during-conference.jpg");;
+    background-size:cover;
+    background-color: rgba(0, 0, 17, 0.974);   
+}
+
+/* header {
+    background-color: lightgray;
+    margin: 0;
+    padding: 30px;
+    min-height: 30px;
+    border-bottom:10px solid #001;
+    box-shadow: 20px 30px 50px black;
+    justify-content:space-between;
+    display: flex; 
+}
+
+.branding img{
+   margin: 0;
+   height: 50px;
+   width: 200px;
+
+}
+
+header a {
+    color: rgb(0, 0, 0);
+    text-decoration: none; 
+}
+
+header a:hover {
+    color: #ffa200;
+    text-decoration: none;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+   float: left;
+   display: inline;
+   padding: 0 20px;
+}
+
+header nav {
+    margin-top: 20px;
+} */
+
+    section .container1 {
+    
+    height: 600px;
+    /* background-color: white;
+    border-radius: 20px;
+    box-shadow: 20px 30px 50px #00000033;
+    justify-content: center;
+    display: flex;
+    align-items: center; */
+}
+
+.container1 h2{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.login-page{
+    width: 360px;
+    padding:10px 0 0;
+    margin: 30px auto;
+}
+
+.page{
+    display: flex;
+}
+
+.form{
+    position: relative;
+    z-index: 1;
+    background:rgba(255, 255, 255, 0.8);
+    /* max-width:  360px; */
+    padding: 45px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 20px 30px 50px #00000033;
+    
+}
+
+
+.form input{
+    outline: 1;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 10px 0;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px ;
+    border-radius: 20px;
+}
+.che{
+    display: flex;
+    float: left;
+    font-size: 12px;
+    margin: 5px;
+   
+}
+
+.che p{
+    top: 0;
+}
+
+.chebox a{
+    float: right;
+    font-size: 12px;
+    text-decoration: none;
+    color: #001;
+    margin: 5px;
+}
+
+.chebox a:hover{
+    color: #888;
+    
+}
+
+.form input[type=submit] {
+    outline: 0;
+    background:#001;
+    text-transform: uppercase;
+    width: 270px;
+    padding: 15px;
+    border: 0;
+    color:  white;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
+
+
+
+.form input[type=submit]:hover, .form button:active{
+    background: #888;
+    color:rgb(0, 0, 0);
+    transition: .2s ease;
+    width: 235px;
+}
+
+.form .message{
+    margin: 15px 0 0;
+    color: #001;
+    font-size: 12px;
+}
+
+.form .message a{
+    color: #001;
+    text-decoration: none;
+}
+
+.form .message a:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #001;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 0 0 10px;
+    transform: 1s ease;
+}
+
+
+.form .registration{
+    display: none;
+}
+
+p {
+    font-size: 13px;
+    
+}
+
+h5 {
+    text-align: left;
+    line-height: 5px;
+}
+
+.home a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    margin: 20px;
+}
+.home a:hover{
+    color:#fff;
+    background-color: #001;
+    padding: 10px;
+    border-radius: 20px;
+    transform: 1s ease;
+}
+
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin: 10px 20px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 100px #000;
+    
+}
+
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    /* content: "✔"; */
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    /* content: "✖"; */
+}

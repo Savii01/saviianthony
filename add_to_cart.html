@@ -1,0 +1,132 @@
+
+    <head>
+        <title>andrews design</title>
+        <meta name="viewport"  content="width=device-width, initial-scale=1">
+        <link href="cart.css" rel="stylesheet">
+        <link rel="stylesheet" href="fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css">
+        <link rel="icon" href="images/logo.png" sizes="96x192">
+    </head>
+    <!-- <script src="cart.js"></script> -->
+    <script src="jquery-3.3.1.min.js"></script>
+    <body>
+        <header id="contain">
+            <div class="container" id="my-container">
+                <nav>
+                     <input type="checkbox" id="check">
+                     <label for="check" class="checkbtn"> 
+                    <i class="fa fa-bars"></i>     
+                    </label>
+                    <label class="logo">Andrews Design</label>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="sign_up.html"> Sign up</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li id="shop"><button id="modal-btn" ><a href="add_to_cart.html" class="active"><i class="fa fa-shopping-cart"></i> (<span class="total-count">0</span>)
+                        </button></a></li>  
+                    </ul>
+                </nav>
+            </div>
+        </header>
+     
+            <div class="product-container">
+                <div class="product-header">
+                    <div class = product-header>
+                        <h5 class="product-title">PRODUCT</h5>
+                       <h5 class="product-name">NAME</h5>
+                       <h5 class="product-price">UNIT PRICE</h5>
+                       <h5 class="product-qty">QUANTITY</h5>
+                       <h5 class="product-total">TOTAL</h5>
+                       <h5 class="clear-all"></h5>
+                    </div>
+                </div> 
+                <div class="product">
+                   <div class="product-items"></div>     
+                     
+                    
+                </div>
+                
+             
+                <!-- <table class="show-cart-table">
+                    <tr class="title">
+                        <th>PRODUCT</th>
+                        <th>NAME</th>
+                        <th>UNIT PRICE</th>
+                        <th></th>
+                    </tr>
+                    <tr class="cart-items">
+                       <td><img src="images/anny.jpg"></td>
+                        <td>Logo Designs</td>
+                       <td>$50.00</td>
+                       <td><button style="background-color: white; border: none; padding:10px; box-shadow: 1px 1px 20px rgba(0, 0, 17, 0.082);">
+                        <i class="fa fa-trash" style="color: red;"></i></button></td>
+                    </tr>
+                    <tr class="cart-items">
+                        <td><img src="images/FB_IMG_16284046582783728.jpg"></td>
+                         <td>Mascot Designs</td>
+                        <td>$50.00</td>
+                        <td><button style="background-color: white; border: none; padding:10px; box-shadow: 1px 1px 20px rgba(0, 0, 17, 0.082);">
+                            <i class="fa fa-trash" style="color: red;"></i></button></td>
+                    </tr>    
+                    <tr class="cart-items">
+                        <td><img src="images/template4.jpg"></td>
+                         <td>Book Covers</td>
+                         <td>$50.00</td>
+                         <td><button style="background-color: white; border: none; padding:10px; box-shadow: 1px 1px 20px rgba(0, 0, 17, 0.082);">
+                            <i class="fa fa-trash" style="color: red;"></i></button></td>
+                    </tr>           
+
+                    <tr class="cart-items">
+                            <td><img src="images/mark.jpg"></td>
+                            <td>Business Card</td>
+                            <td>$50.00</td>
+                            <td><button style="background-color: white; border: none; padding:10px; box-shadow: 1px 1px 20px rgba(0, 0, 17, 0.082);">
+                               <i class="fa fa-trash" style="color: red;"></i></button></td> 
+                    </tr>  
+                    <tr class="cart-items">
+                        <td><img src="images/mockup_3.jpg"></td>
+                        <td>Letterhead</td>
+                        <td>$50.00</td>
+                        <td><button style="background-color: white; border: none; padding:10px; box-shadow: 1px 1px 20px rgba(0, 0, 17, 0.082);">
+                           <i class="fa fa-trash" style="color: red;"></i></button></td> 
+                </tr>
+                
+                <tr class="cart-items">
+                    <td><img src="images/propertio_d_second_1.jpg"></td>
+                    <td>Business Card</td>
+                    <td>$50.00</td>
+                    <td><button style="background-color: white; border: none; padding:10px; box-shadow: 1px 1px 20px rgba(0, 0, 17, 0.082);">
+                       <i class="fa fa-trash" style="color: red;"></i></button></td> 
+                </tr> 
+                <tr class="cart-items">
+                    <td><img src="images/anny.gif"></td>
+                    <td>Logo Animation</td>
+                    <td>$50.00</td>
+                    <td><button style="background-color: white; border: none; padding:10px; box-shadow: 1px 1px 20px rgba(0, 0, 17, 0.082);">
+                       <i class="fa fa-trash" style="color: red;"></i></button></td> 
+                </tr> 
+                <tr class="cart-items">
+                    <td><img src="images/about-img1.png"></td>
+                    <td>Website Design</td>
+                    <td>$50.00</td>
+                    <td><button style="background-color: white; border: none; padding:10px; box-shadow: 1px 1px 20px rgba(0, 0, 17, 0.082);">
+                       <i class="fa fa-trash" style="color: red;"></i></button></td> 
+                </tr> 
+                </table> -->
+                <!-- <div class="total">        
+                    <div class="total-price">Total price: $<span class="total-cart"></span></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Order now</button>
+                    </div>
+                </div>   -->
+            </div>
+          
+        
+  
+  
+        <script src="cart.js"></script>
+    </body>
+</html
